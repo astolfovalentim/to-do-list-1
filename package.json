@@ -1,0 +1,23 @@
+{
+  "name": "to-do-list-1",
+  "version": "1.0.0",
+  "description": "Projeto 1 - To Do List - #01\r Back-end CRUD memória (Read All e Read By Id)\r Critérios de Avaliação\r - Endpoints (4 pontos)\r - [GET] Leitura de todas os personagens (0,8 pontos);\r - [GET] Leitura de personagens individuais (por ID) (0,8 pontos).\r - [POST] Criação de personagens (0,8 pontos);\r - [PUT] Edição de personagens por ID (0,8 pontos);\r - [DELETE] Exclusão de personagens por ID (0,8 pontos).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astolfovalentim/to-do-list-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astolfovalentim/to-do-list-1/issues"
+  },
+  "homepage": "https://github.com/astolfovalentim/to-do-list-1#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
