@@ -1,21 +1,10 @@
-const express = require('express');
-const router = express.Router();
+const route = require('express').Router();
+const controllerCats = require('../controllers/cat.controller');
 
-const thundercatsController = require('../controllers/thundercats.controller');
+route.get('/find-cats', controllerCats.findAllCatsController);
+route.get('/cat/:id', controllerCats.findByIdCatController);
+route.post('/create', controllerCats.createCatsController);
+route.put('/update/:id', controllerCats.updateCatsController);
+route.delete('/delete/:id', controllerCats.deleteCatsController);
 
-router.get('/', thundercatsController.homeThundercatsController);
-router.get('/find-cats', thundercatsController.findThundercatsController);
-router.get(
-  '/find-cat/:id',
-  thundercatsController.findThundercatsByIdController,
-);
-router.get(
-  '/find-cats-valor/:valor',
-  thundercatsController.findCatsByValorController,
-);
-
-router.post('/add', thundercatsController.addCatsController);
-
-router.put('/update/:id', thundercatsController.updateCatsController);
-
-module.exports = router;
+module.exports = route;
